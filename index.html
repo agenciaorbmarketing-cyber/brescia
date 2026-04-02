@@ -8,24 +8,22 @@
 
   <style>
     :root{
-      --bg: #f5f1e8;
-      --bg-2: #ede6da;
-      --surface: #ffffff;
-      --surface-2: #f7f3eb;
+      --bg: #f4efe5;
+      --bg-2: #ece4d8;
+      --surface: #fffaf2;
+      --surface-2: #f7f2e8;
       --surface-3: #eef4ef;
-      --ink: #163227;
-      --ink-2: #315042;
-      --muted: #67756d;
-      --line: rgba(22,50,39,.12);
+
+      --ink: #193226;
+      --ink-2: #365144;
+      --muted: #66746c;
+      --line: rgba(25,50,38,.12);
 
       --green: #00483f;
-      --green-2: #0c5f51;
-      --green-3: #1a6e5c;
-
+      --green-2: #0d5f52;
       --gold: #c7a76a;
-      --gold-2: #e2c98f;
+      --gold-2: #e4ce96;
       --red: #cc4b43;
-      --red-2: #e96f5d;
       --white: #fffdf8;
 
       --shadow: 0 22px 70px rgba(14, 32, 25, .10);
@@ -44,7 +42,7 @@
       background:
         radial-gradient(1000px 700px at 10% 0%, rgba(0,72,63,.08), transparent 42%),
         radial-gradient(900px 650px at 100% 8%, rgba(199,167,106,.12), transparent 38%),
-        linear-gradient(180deg, var(--bg) 0%, #f8f5ef 100%);
+        linear-gradient(180deg, var(--bg) 0%, #f9f6ef 100%);
       overflow-x:hidden;
     }
 
@@ -102,11 +100,11 @@
     .brand h1{
       margin:0;
       color:#fff;
-      font-size:1.2rem;
+      font-size:1.15rem;
       line-height:1;
-      font-family: "Brush Script MT","Segoe Script","Snell Roundhand",cursive;
-      font-weight:400;
-      letter-spacing:.02em;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight:600;
+      letter-spacing:-.02em;
     }
 
     .brand p{
@@ -150,7 +148,7 @@
 
     .hero{
       position:relative;
-      padding:38px 0 30px;
+      padding:34px 0 28px;
     }
 
     .hero-shell{
@@ -181,7 +179,7 @@
       display:grid;
       grid-template-columns: 1.08fr .92fr;
       gap:20px;
-      padding:40px;
+      padding:38px;
       align-items:stretch;
       position:relative;
       z-index:1;
@@ -212,10 +210,10 @@
 
     .hero h2{
       margin:18px 0 14px;
-      font-size: clamp(2.7rem, 6vw, 5.5rem);
-      line-height:.95;
+      font-size: clamp(2.1rem, 4.5vw, 4.2rem);
+      line-height:1.02;
       letter-spacing:-.05em;
-      max-width:12ch;
+      max-width:13ch;
       font-family: Georgia, "Times New Roman", serif;
       font-weight:600;
     }
@@ -224,7 +222,7 @@
       margin:0;
       max-width:62ch;
       color:rgba(255,255,255,.86);
-      font-size:1.06rem;
+      font-size:1.02rem;
       line-height:1.78;
     }
 
@@ -281,7 +279,7 @@
 
     .kpi strong{
       display:block;
-      font-size:1.18rem;
+      font-size:1.16rem;
       margin-bottom:4px;
       color:#fff;
     }
@@ -329,7 +327,7 @@
 
     .logo-text{
       font-family: "Brush Script MT","Segoe Script","Snell Roundhand",cursive;
-      font-size:2.2rem;
+      font-size:2rem;
       line-height:.92;
       color:var(--green);
       letter-spacing:.02em;
@@ -339,14 +337,14 @@
       font-family: Georgia, "Times New Roman", serif;
       font-variant: small-caps;
       letter-spacing:.22em;
-      font-size:1.05rem;
+      font-size:1.02rem;
       color:var(--ink);
     }
 
     .logo-note{
       color:var(--muted);
-      line-height:1.65;
-      font-size:.96rem;
+      line-height:1.68;
+      font-size:.95rem;
       max-width:34ch;
     }
 
@@ -387,7 +385,7 @@
       display:block;
       color:var(--green);
       margin-bottom:4px;
-      font-size:.98rem;
+      font-size:.96rem;
     }
 
     .mini-stat span{
@@ -410,7 +408,7 @@
 
     .section-header h2{
       margin:0;
-      font-size: clamp(1.8rem, 3vw, 2.75rem);
+      font-size: clamp(1.75rem, 2.8vw, 2.55rem);
       line-height:1.06;
       font-family: Georgia, "Times New Roman", serif;
       color:var(--ink);
@@ -422,6 +420,7 @@
       max-width:60ch;
       color:var(--muted);
       line-height:1.72;
+      font-size:.97rem;
     }
 
     .grid{
@@ -438,7 +437,6 @@
     .quote,
     .info-card,
     .contact-card,
-    .step,
     .location-card{
       background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(248,244,236,.96));
       border:1px solid var(--line);
@@ -466,7 +464,7 @@
     .info-card h3{
       margin:0 0 10px;
       color:var(--ink);
-      font-size:1.05rem;
+      font-size:1.03rem;
       line-height:1.2;
       font-family: Georgia, "Times New Roman", serif;
       letter-spacing:-.02em;
@@ -480,7 +478,7 @@
       margin:0;
       color:var(--muted);
       line-height:1.72;
-      font-size:.96rem;
+      font-size:.95rem;
     }
 
     .feature ul{
@@ -588,6 +586,58 @@
       font-size:.84rem;
     }
 
+    .links-grid{
+      display:grid;
+      gap:12px;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .link-card{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:16px 18px;
+      border-radius:20px;
+      background:linear-gradient(180deg, #fff, #f6f2ea);
+      border:1px solid var(--line);
+      box-shadow:0 10px 22px rgba(14,32,25,.06);
+      transition:.24s ease;
+    }
+
+    .link-card:hover{
+      transform:translateY(-1px);
+      box-shadow:0 14px 28px rgba(14,32,25,.10);
+    }
+
+    .link-card strong{
+      display:block;
+      color:var(--ink);
+      font-size:1rem;
+      margin-bottom:4px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .link-card span{
+      display:block;
+      color:var(--muted);
+      font-size:.9rem;
+      line-height:1.45;
+    }
+
+    .link-badge{
+      flex:0 0 auto;
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg, rgba(0,72,63,.10), rgba(199,167,106,.16));
+      border:1px solid rgba(0,72,63,.10);
+      color:var(--green);
+      font-weight:800;
+    }
+
     .location-wrap{
       display:grid;
       grid-template-columns: 1.05fr .95fr;
@@ -601,10 +651,9 @@
       position:relative;
       overflow:hidden;
       background:
-        linear-gradient(135deg, rgba(0,72,63,.95), rgba(0,64,56,.95)),
+        linear-gradient(135deg, rgba(0,72,63,.96), rgba(0,64,56,.96)),
         radial-gradient(circle at 20% 20%, rgba(255,255,255,.12), transparent 17%),
-        radial-gradient(circle at 72% 30%, rgba(255,255,255,.08), transparent 18%),
-        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+        radial-gradient(circle at 72% 30%, rgba(255,255,255,.08), transparent 18%);
       border:1px solid rgba(0,72,63,.14);
       box-shadow: var(--shadow-strong);
       color:#fff;
@@ -635,6 +684,8 @@
       transform:translate(-50%, -50%);
       text-align:center;
       z-index:2;
+      padding:0 20px;
+      width:100%;
     }
 
     .pin{
@@ -663,7 +714,7 @@
     .map-pin h3{
       color:#fff;
       margin:0 0 8px;
-      font-size:1.2rem;
+      font-size:1.16rem;
       letter-spacing:-.02em;
       font-family: Georgia, "Times New Roman", serif;
     }
@@ -757,7 +808,7 @@
 
     .cta-final h2{
       margin:0 0 8px;
-      font-size: clamp(1.55rem, 2.8vw, 2.2rem);
+      font-size: clamp(1.55rem, 2.5vw, 2.1rem);
       font-family: Georgia, "Times New Roman", serif;
       letter-spacing:-.03em;
     }
@@ -767,6 +818,7 @@
       max-width:64ch;
       color:var(--muted);
       line-height:1.72;
+      font-size:.97rem;
     }
 
     footer{
@@ -776,7 +828,7 @@
     }
 
     .footer-inner{
-      border-top:1px solid rgba(22,50,39,.10);
+      border-top:1px solid rgba(25,50,38,.10);
       padding-top:20px;
       display:flex;
       justify-content:space-between;
@@ -802,7 +854,8 @@
       .grid.features,
       .grid.social,
       .grid.four,
-      .grid.two{
+      .grid.two,
+      .links-grid{
         grid-template-columns:1fr;
       }
 
@@ -822,7 +875,7 @@
       }
 
       .hero{padding-top:24px}
-      .hero-grid{padding:24px}
+      .hero-grid{padding:22px}
       .hero-kpis{grid-template-columns:1fr}
       .brand-foot{grid-template-columns:1fr}
       .section{padding:44px 0}
@@ -858,6 +911,7 @@
         <nav class="navlinks" aria-label="Navegação principal">
           <a href="#sobre">Sobre</a>
           <a href="#destaques">Destaques</a>
+          <a href="#links">Links</a>
           <a href="#prova-social">Avaliações</a>
           <a href="#localizacao">Localização</a>
           <a href="#contato">Contato</a>
@@ -872,16 +926,16 @@
         <div class="hero-shell">
           <div class="hero-grid">
             <div class="reveal">
-              <span class="eyebrow"><span class="dot"></span> Presença digital consolidada a partir das plataformas informadas</span>
-              <h2>Comida caseira que abraça o coração.</h2>
+              <span class="eyebrow"><span class="dot"></span> Presença digital consolidada nas plataformas informadas</span>
+              <h2>Comida caseira, almoço e delivery em Avaré.</h2>
               <p class="lead">
-                Uma comunicação centrada em almoço, praticidade e uma experiência acolhedora,
-                com presença de delivery, buffet por quilo e salão para quem busca comer bem no dia a dia.
+                A Bréscia Rotisserie oferece uma experiência acolhedora, com foco em refeições do dia a dia,
+                atendimento prático e uma presença que transmite confiança em diferentes canais.
               </p>
 
               <div class="hero-actions">
                 <a class="btn btn-primary" href="#contato">Pedir / falar com a equipe</a>
-                <a class="btn btn-secondary" href="#localizacao">Ver localização</a>
+                <a class="btn btn-secondary" href="#links">Ver links oficiais</a>
               </div>
 
               <div class="hero-kpis" aria-label="Indicadores principais">
@@ -891,11 +945,11 @@
                 </div>
                 <div class="kpi">
                   <strong>5,0</strong>
-                  <span>Tripadvisor, com 3 avaliações</span>
+                  <span>Tripadvisor com 3 avaliações</span>
                 </div>
                 <div class="kpi">
                   <strong>Almoço</strong>
-                  <span>Atuação percebida em horários diurnos e rotina de refeição</span>
+                  <span>Operação voltada a refeição diária e praticidade</span>
                 </div>
               </div>
             </div>
@@ -906,8 +960,8 @@
                   <div class="logo-text">Bréscia</div>
                   <div class="logo-sub">Rotisserie</div>
                   <p class="logo-note">
-                    Leitura visual alinhada ao que a logo comunica: sofisticação acolhedora,
-                    identidade clássica e uma assinatura gastronômica com sensação de tradição.
+                    Identidade visual elegante, com presença clássica e leitura acolhedora.
+                    O site acompanha essa proposta com um visual mais leve, claro e sofisticado.
                   </p>
 
                   <div class="tag-row">
@@ -922,11 +976,11 @@
                 <div class="brand-foot">
                   <div class="mini-stat">
                     <b>Percepção predominante</b>
-                    <span>Acolhedora, confiável e orientada a refeição do dia a dia.</span>
+                    <span>Acolhedora, confiável e orientada à rotina de almoço.</span>
                   </div>
                   <div class="mini-stat">
                     <b>Posicionamento</b>
-                    <span>Popular com toque premium, sem linguagem excessivamente formal.</span>
+                    <span>Popular com acabamento premium e comunicação elegante.</span>
                   </div>
                 </div>
               </div>
@@ -940,10 +994,10 @@
       <div class="wrap">
         <div class="section-header reveal">
           <div>
-            <h2>O que a marca comunica</h2>
+            <h2>Sobre a experiência</h2>
             <p>
-              O conjunto de sinais públicos aponta uma operação focada em almoço, comida preparada com cuidado,
-              canais de consumo práticos e uma experiência percebida como confiável.
+              Os sinais públicos apontam uma operação centrada em almoço, comida preparada com cuidado
+              e formatos práticos para quem quer comer bem sem complicação.
             </p>
           </div>
         </div>
@@ -952,18 +1006,18 @@
           <article class="feature reveal">
             <div class="icon">🍽️</div>
             <h3>Comida caseira</h3>
-            <p>O discurso público reforça conforto, sabor de preparo cuidadoso e uma sensação de comida feita para acolher.</p>
+            <p>Sabor de preparo cuidadoso, com comunicação direta e foco em conforto e rotina.</p>
             <ul>
               <li>apelo afetivo claro</li>
-              <li>linguagem simples e direta</li>
-              <li>ligação com almoço do dia a dia</li>
+              <li>linguagem simples e objetiva</li>
+              <li>conexão com almoço do dia a dia</li>
             </ul>
           </article>
 
           <article class="feature reveal">
             <div class="icon">🫕</div>
-            <h3>Formato versátil</h3>
-            <p>Os canais citados sugerem buffet por quilo, self-service, à la carte e delivery como extensões do atendimento.</p>
+            <h3>Formatos de atendimento</h3>
+            <p>Os canais citados indicam buffet por quilo, self-service, à la carte e delivery.</p>
             <ul>
               <li>consumo no local</li>
               <li>pedido para viagem</li>
@@ -973,8 +1027,8 @@
 
           <article class="feature reveal">
             <div class="icon">✨</div>
-            <h3>Cuidado percebido</h3>
-            <p>As avaliações públicas destacam sabor, limpeza, atendimento e uma experiência geral positiva no salão.</p>
+            <h3>Boa percepção pública</h3>
+            <p>As avaliações destacam sabor, limpeza, atendimento e uma experiência geral bem recebida.</p>
             <ul>
               <li>ambiente bem avaliado</li>
               <li>atendimento elogiado</li>
@@ -996,10 +1050,10 @@
 
         <div class="contrast">
           <div class="accent-panel reveal">
-            <h3>Proposta de valor consolidada</h3>
+            <h3 style="margin:0 0 10px; font-family: Georgia, 'Times New Roman', serif; letter-spacing:-.02em;">O que a marca entrega</h3>
             <p>
-              O posicionamento mais forte encontrado combina comida caseira, praticidade e sensação de confiança.
-              A marca conversa com quem busca almoço frequente, refeição completa e uma experiência com calor humano.
+              A proposta reúne comida caseira, praticidade e uma experiência de confiança.
+              O resultado é uma marca com apelo forte para almoço frequente, refeição completa e rotina sem complicação.
             </p>
 
             <div class="mini-list">
@@ -1023,7 +1077,7 @@
                 <div class="bullet"></div>
                 <div>
                   <b>Identidade afetiva</b>
-                  <span>Linguagem de conforto, cuidado e comida que “abraça o coração”.</span>
+                  <span>Linguagem de conforto, cuidado e comida que abraça o coração.</span>
                 </div>
               </div>
             </div>
@@ -1040,6 +1094,61 @@
               <li><span>Comunicação acolhedora</span></li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="links">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <div>
+            <h2>Links da marca</h2>
+            <p>
+              Acesso rápido aos canais informados para conhecer a marca, conferir avaliações e acompanhar os perfis oficiais.
+            </p>
+          </div>
+        </div>
+
+        <div class="links-grid">
+          <a class="link-card reveal" href="https://www.instagram.com/bresciarestaurante/" target="_blank" rel="noopener noreferrer">
+            <div>
+              <strong>Instagram</strong>
+              <span>Perfil da Bréscia Rotisserie</span>
+            </div>
+            <div class="link-badge">IG</div>
+          </a>
+
+          <a class="link-card reveal" href="https://www.facebook.com/bresciaavare/?locale=pt_BR" target="_blank" rel="noopener noreferrer">
+            <div>
+              <strong>Facebook</strong>
+              <span>Página da marca em Avaré</span>
+            </div>
+            <div class="link-badge">FB</div>
+          </a>
+
+          <a class="link-card reveal" href="https://www.ifood.com.br/delivery/avare-sp/brescia-restaurante-vila-sao-judas-tadeu/42060175-d114-48e9-86bf-2d672940c666" target="_blank" rel="noopener noreferrer">
+            <div>
+              <strong>iFood</strong>
+              <span>Delivery e informações públicas do restaurante</span>
+            </div>
+            <div class="link-badge">IF</div>
+          </a>
+
+          <a class="link-card reveal" href="https://www.tripadvisor.com.br/Restaurant_Review-g1732576-d15143745-Reviews-Brescia_Rotisserie-Avare_State_of_Sao_Paulo.html" target="_blank" rel="noopener noreferrer">
+            <div>
+              <strong>Tripadvisor</strong>
+              <span>Avaliações e reputação pública</span>
+            </div>
+            <div class="link-badge">TA</div>
+          </a>
+
+          <a class="link-card reveal" href="https://share.google/fqddwfTEq5rQjsC9T" target="_blank" rel="noopener noreferrer">
+            <div>
+              <strong>Google Perfil da Empresa</strong>
+              <span>Link compartilhado informado para o perfil da marca</span>
+            </div>
+            <div class="link-badge">G</div>
+          </a>
         </div>
       </div>
     </section>
@@ -1074,7 +1183,7 @@
           <article class="quote reveal">
             <div class="stars">★★★★★</div>
             <h3>Atendimento</h3>
-            <p>Os comentários públicos também reforçam bom atendimento e receptividade no salão.</p>
+            <p>Os comentários públicos também reforçam boa receptividade e atendimento no salão.</p>
             <footer>Leitura das avaliações públicas</footer>
           </article>
         </div>
@@ -1106,8 +1215,8 @@
           <div>
             <h2>Localização e acesso</h2>
             <p>
-              A apresentação visual foi refeita para ficar mais elegante e clara, sem depender de um mapa
-              que não abre bem ou polui a leitura no mobile.
+              A área foi redesenhada para parecer mais elegante e funcionar melhor no mobile,
+              sem depender de um mapa visualmente pesado.
             </p>
           </div>
         </div>
@@ -1143,7 +1252,7 @@
 
               <div class="contact-inline">
                 <a href="tel:+551437317252">Ligar agora</a>
-                <a href="#destaques">Ver destaques</a>
+                <a href="#links">Ver links</a>
                 <a href="#sobre">Entender a marca</a>
               </div>
             </article>
@@ -1151,8 +1260,8 @@
             <article class="contact-card reveal">
               <h3>Resumo da localização</h3>
               <p>
-                O endereço aparece com pequenas variações entre plataformas. Para o site, a versão mais segura
-                é exibir a rua e o bairro como referência principal.
+                O endereço aparece com pequenas variações entre plataformas. Para o site,
+                a versão mais segura é exibir rua e bairro como referência principal.
               </p>
               <p style="margin-top:10px">
                 Quando houver confirmação do endereço completo, esta área pode receber um mapa embutido real.
@@ -1191,11 +1300,11 @@
           <div>
             <h2>Almoço bem feito, apresentação à altura.</h2>
             <p>
-              O layout agora usa uma leitura mais leve, elegante e coerente com a identidade visual da marca,
-              mantendo confiança, desejo e clareza sem escurecer demais a experiência.
+              O layout foi ajustado para ficar mais leve, mais legível e mais pronto para o público final,
+              mantendo confiança, desejo e clareza sem pesar na experiência.
             </p>
           </div>
-          <a class="btn btn-primary" href="#contato">Falar com a equipe</a>
+          <a class="btn btn-primary" href="#links">Acessar canais oficiais</a>
         </div>
       </div>
     </section>
